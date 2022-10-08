@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/order.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Blast Restaurant</title>
+</head>
+<body>
+    <div class="mb-5">
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container text-uppercase p-2">
+                <img class="gambar" src="./images/PUTSONGfixed.png">
+                <a class="navbar-brand font-weight-bold text-white" href="index.html">Cuisine de Rêve</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto text-uppercase">
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reservation.html">Reservation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Order Online</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutUs.html">About us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container" id="reserv-form">
+        <form action="" method="POST">
+            <div class="bg-light p-5 mb-5 rounded">
+                <div class="text-center">
+                    <h1>ORDERING</h1>
+                </div>
+        
+                <div class="my-4">
+                    <label for="customerName" class="form-label">On behalf of</label>
+                    <input type="text" class="form-control" id="customerName" placeholder="e.g. John, Anna, etc." required>
+                </div>
+                <div class="my-4">
+                    <label for="customerContact" class="form-label">Phone number</label>
+                    <input type="text" class="form-control" id="customerContact" placeholder="e.g. 081XXXXXXXXX" required>
+                    <div id="contactHelp" class="form-text">We'll never share your phone number with anyone else.</div>
+                </div>
+
+                <div class="my-4">
+                    <label for="customerName" class="form-label">Services</label>
+                    <select class="custom-select">
+                        <option value="Choose">Please Choose...</option>
+                        <option value="1">Self Pick-up</option>
+                        <option value="2">Go-send / Grab-send</option>
+                        <option value="3">Our-delivery (max 5 km)</option>
+                    </select>
+                </div>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button id="indonesia" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          <h1 class="judul-luar" data-uw-styling-context="true">Indonesian Food</h1> 
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <section class="menu">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="new-list col-lg-4 col-md-4 col-12">
+                                            <h1 class="judul-menu">Sayuran</h1>
+                                            <table>
+                                                <td>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Kangkung Terasi</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Sayur Urap</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Sayur Nangka</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Daun Singkong</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Tumis Buncis</label>
+                                                        </div>
+                                                    </li>
+                                                </td>
+
+                                                <td>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                </td>
+                                            </table>
+
+                                            
+                                        </div>
+                        
+                                        <div class="new-list col-lg-4 col-md-4 col-12">
+                                            <h1 class="judul-menu">Ayam</h1>
+                                            <table>
+                                                <td>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Ayam Pop</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Ayam Kari</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Ayam Bakar</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Ayam Betutu Bali</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Ayam Kalasan</label>
+                                                        </div>
+                                                    </li>
+                                                </td>
+
+                                                <td>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                </td>
+
+                                            </table>
+                                            
+                                            
+                                        </div>
+                        
+                                        <div class="new-list col-lg-4 col-md-4 col-12">
+                                            <h1 class="judul-menu">Telur</h1>
+                                            <table>
+                                            <td>
+                                                <li class="list">
+                                                    <div class="form-group form-check">
+                                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                        <label class="form-check-label" for="exampleCheck1">Telur Dadar Padang</label>
+                                                    </div>
+                                                </li>
+                                                <li class="list">
+                                                    <div class="form-group form-check">
+                                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                        <label class="form-check-label" for="exampleCheck1">Telur Mata Sapi</label>
+                                                    </div>
+                                                </li>
+                                                <li class="list">
+                                                    <div class="form-group form-check">
+                                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                        <label class="form-check-label" for="exampleCheck1">Telur Balado</label>
+                                                    </div>
+                                                </li>
+                                                <li class="list">
+                                                    <div class="form-group form-check">
+                                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                        <label class="form-check-label" for="exampleCheck1">Telur dadar Biasa</label>
+                                                    </div>
+                                                </li>
+                                                <li class="list">
+                                                    <div class="form-group form-check">
+                                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                        <label class="form-check-label" for="exampleCheck1">Telur Cabai Hijau</label>
+                                                    </div>
+                                                </li>
+                                            </td>
+
+                                            <td>
+                                                <li class="harga">(35k)</li>
+                                                <li class="harga">(35k)</li>
+                                                <li class="harga">(35k)</li>
+                                                <li class="harga">(35k)</li>
+                                                <li class="harga">(35k)</li>
+                                            </td>
+                                            </table>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <br><br>
+            
+                            <section class="menu">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="new-list col-lg-4 col-md-4 col-12">
+                                            <h1 class="judul-menu">Nasi</h1>
+                                            <table>
+                                                <td>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Nasi Putih</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Nasi Jagung</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Nasi Liwet</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Nasi Bakar</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Nasi Tim Ayam</label>
+                                                        </div>
+                                                    </li>
+                                                </td>
+
+                                                <td>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                </td>
+                                            </table>
+                                            
+                                        </div>
+                        
+                                        <div class="new-list col-lg-4 col-md-4 col-12">
+                                            <h1 class="judul-menu">Sop</h1>
+                                            <table>
+                                                <td>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Sop Ayam/Daging</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Sop Sengkel Sapi</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Sop telur</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Rawon Ayam/Daging</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Soto Ayam/Daging</label>
+                                                        </div>
+                                                    </li>
+                                                </td>
+                                                <td>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                </td>
+                                            </table>
+                                            
+                                            
+                                        </div>
+                        
+                                        <div class="new-list col-lg-4 col-md-4 col-12">
+                                            <h1 class="judul-menu">Aneka Es</h1>
+                                            <table>
+                                                <td>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Es Teler </label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Es Cendol</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Es Kacang Merah</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Es Campur Durian</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Es Campur Medan</label>
+                                                        </div>
+                                                    </li>
+                                                </td>
+                                                <td>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                </td>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <br><br>
+                        </div>
+                      </div>
+                    </div>
+            
+                    <!--WESTERN FOOD-->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button id="western" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <h1 class="judul-luar">Western Food</h1>
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <section class="menu">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="new-list col-lg-4 col-md-4 col-12">
+                                            <h1 class="judul-menu">STEAK</h1>
+                                            <table>
+                                                <td>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Premium Striploin </label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Wagyu Striploin</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">US Sirloin</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Premium Tenderloin</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">US Ribeye</label>
+                                                        </div>
+                                                    </li>
+                                                </td>
+                                                <td>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                </td>
+                                            </table>
+                                        </div>
+                        
+                                        <div class="new-list col-lg-4 col-md-4 col-12">
+                                            <h1 class="judul-menu">PASTA</h1>
+
+                                            <table>
+                                                <td>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Lamb Chop Pasta</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Lamb Pasta</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Chicken Grill Pasta</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Beef Pasta</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Meatball Pasta</label>
+                                                        </div>
+                                                    </li>
+                                                </td>
+                                                <td>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                </td>
+                                            </table>
+                                        </div>
+                        
+                                        <div class="new-list col-lg-4 col-md-4 col-12">
+                                            <h1 class="judul-menu">BURGER</h1>
+                                            <table>
+                                                <td>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Beef/Chicken Burger</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Cheese Burger</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Double Patty Burger</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Deluxe Beef Burger</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Vegan Burger</label>
+                                                        </div>
+                                                    </li>
+                                                </td>
+                                                <td>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                </td>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <br><br>
+            
+                            <section class="menu">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="new-list col-lg-4 col-md-4 col-12">
+                                            <h1 class="judul-menu">PIZZA</h1>
+                                            <table>
+                                                <td>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Margaritta Pizza</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Hawaiian Pizza</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Pepperoni Pizza</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Chicken Pizza</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Vegetarian Pizza</label>
+                                                        </div>
+                                                    </li>
+                                                </td>
+                                                <td>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                </td>
+                                            </table>
+                                        </div>
+                        
+                                        <div class="new-list col-lg-4 col-md-4 col-12">
+                                            <h1 class="judul-menu">A'LA CARTE</h1>
+                                            <table>
+                                                <td>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Garlic Bread</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">French Fries</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Grill Sausage</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Onion Rings</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Chicken Wings</label>
+                                                        </div>
+                                                    </li>
+                                                </td>
+                                                <td>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                </td>
+                                            </table>
+                                        </div>
+                        
+                                        <div class="new-list col-lg-4 col-md-4 col-12">
+                                            <h1 class="judul-menu">DESSERT</h1>
+                                            <table>
+                                                <td>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Avocado Cake</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Ice Cream</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Cherry Apple Crumble</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">American Pie</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Tarte Tatin</label>
+                                                        </div>
+                                                    </li>
+                                                </td>
+                                                <td>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                </td>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <br><br>
+                        </div>
+                      </div>
+                    </div>
+            
+                    <!--CHINESE FOOD-->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button id="chinese" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          <h1 class="judul-luar">Chinese Food</h1>
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <section class="menu">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="new-list col-lg-4 col-md-4 col-12">
+                                            <h1 class="judul-menu">CHICKEN</h1>
+                                            <table>
+                                                <td>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Ayam Saus Tiram</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Ayam Madu</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Ayam Bawang Putih</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Ayam Gong Bao</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Ayam Asam Manis</label>
+                                                        </div>
+                                                    </li>
+                                                </td>
+                                                <td>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                </td>
+                                            </table>
+                                        </div>
+                        
+                                        <div class="new-list col-lg-4 col-md-4 col-12">
+                                            <h1 class="judul-menu">BEEF</h1>
+                                            <table>
+                                                <td>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Sapi Lada Hitam</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Sapi Saus Tiram</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Sapi Tumis Jahe</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Sapi Bawang Putih</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Sapi Saus Kari</label>
+                                                        </div>
+                                                    </li>
+                                                </td>
+                                                <td>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                </td>
+                                            </table>
+
+                                        </div>
+                        
+                                        <div class="new-list col-lg-4 col-md-4 col-12">
+                                            <h1 class="judul-menu">VEGETABLES</h1>
+                                            <table>
+                                                <td>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Brokoli Bawang Putih</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Capcai</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Brokoli Tumis Jamur</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Buncis Terasi</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Kangkung Tauco</label>
+                                                        </div>
+                                                    </li>
+                                                </td>
+                                                <td>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                </td>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <br><br>
+            
+                            <section class="menu">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="new-list col-lg-4 col-md-4 col-12">
+                                            <h1 class="judul-menu">FISH</h1>
+                                            <table>
+                                                <td>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Ikan Saus Hongkong</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Ikam Asam Manis</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Ikan Saus Nyonya</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Ikan Steam Jahe</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Ikan Tomyum</label>
+                                                        </div>
+                                                    </li>
+                                                </td>
+                                                <td>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                </td>
+                                            </table>
+                                        </div>
+                        
+                                        <div class="new-list col-lg-4 col-md-4 col-12">
+                                            <h1 class="judul-menu">SOUP</h1>
+                                            <table>
+                                                <td>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Sop Sayur Asin</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Sop Lobak Putih</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Sop Jagung</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Sop Bakso Ikan</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Sop Rumput Laut</label>
+                                                        </div>
+                                                    </li>
+                                                </td>
+                                                <td>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                </td>
+                                            </table>
+                                        </div>
+                        
+                                        <div class="new-list col-lg-4 col-md-4 col-12">
+                                            <h1 class="judul-menu">FRIED NOODLE</h1>
+                                            <table>
+                                                <td>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Kwetiau Seafood</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Mie Seafood</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Bihun Seafood</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Mie Terasi</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list">
+                                                        <div class="form-group form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Mie Ayam/Sapi</label>
+                                                    </li>
+                                                </td>
+                                                <td>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                    <li class="harga">(35k)</li>
+                                                </td>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <br><br>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="my-4">
+                    <label for="customerName" class="form-label">Notes</label>
+                    <input type="text" class="form-control" id="customerName" placeholder="Tell Us What to do..." required>
+                </div>
+                  
+                <div class="d-flex justify-content-center">
+                    <input class="btn btn-secondary" type="Order" value="Order">
+                </div>  
+                </div>
+            </div>   
+                   
+        </form>
+    </div>
+    <section id="footerbar" class="bg-dark pt-4 text-secondary">
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-md-5 my-auto">
+                    <h3>Cuisine de Rêve</h3>
+                    <ul>
+                        <li>Offer many kind of foods and serve you with all of our heart.</li>
+                    </ul>
+                </div>
+                <div class="row col-md-auto">
+                    <div class="col-md-auto">
+                        <h6>Location</h6>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <i class="fa-2x fa fa-map-marker" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-md-auto">
+                                <ul>
+                                    <li>Sanggana Road 54</li>
+                                    <li>Los Angeles</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-auto">
+                        <h6>Contact Us</h6>
+                        <div class="row">
+                            <div class="col-md-1">
+                                <i class="fa-2x fa fa-mobile" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-md-auto">
+                                <ul>
+                                    <li>213-1236-4REV</li>
+                                    <li>(213-1236-4193)</li>                               
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-1">
+                                <i class="fa-lg fa fa-envelope" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-md-auto">
+                                <ul>
+                                    <li>
+                                        cuisine.reve@gmail.com
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

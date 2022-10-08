@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-weight: 700 !important;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.gambar{
+    width: 65px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+/**************** navigation and header start *************/
+
+.nav-item a{
+    color: #fff!important;
+    font-weight: bold;
+}
+
+.nav-item a:hover{
+    color: grey;
+    opacity: 50%;
+}
+
+/**************** navigation and header end *************/
+
+/***************** reservation form start ***************/
+
+.form-label{
+    font-weight: 500;
+    font-size: large !important;
+}
+
+.form-text{
+    margin-top: 0.25rem !important;
+    font-size: 0.875em !important;
+    color: #6c757d !important;
+}
+
+
+/***************** reservation form end ***************/
+
+/*************** footer bar css start ****************/
+
+#footerbar h3{
+    font-weight: bold;
+} 
+
+#footerbar h6{
+    font-weight: bold;
+} 
+
+#footerbar li{
+    font-size: small;
+}
+
+#footerbar i{
+    color: #6c757d;
+}
+
+/*************** footer bar css end ****************/

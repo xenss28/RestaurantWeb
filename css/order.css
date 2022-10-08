@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-weight: 700 !important;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.gambar{
+    width: 65px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+
+/**************** navigation and header start *************/
+
+.nav-item a{
+    color: #fff!important;
+    font-weight: bold;
+}
+
+.nav-item a:hover{
+    color: grey;
+    opacity: 50%;
+}
+
+/**************** navigation and header end *************/
+
+/***************** reservation form start ***************/
+
+.form-label{
+    font-weight: 500;
+    font-size: large !important;
+}
+
+.form-text{
+    margin-top: 0.25rem !important;
+    font-size: 0.875em !important;
+    color: #6c757d !important;
+}
+
+.accordion-item{
+    background-color:ivory;
+    font-weight: normal;
+    text-align: justify;
+ }
+ 
+button#indonesia {
+     background-image: linear-gradient(rgba(24, 2, 4, 0.39),rgba(24, 2, 4, 0.39)),url(../images/indonesian.jpg);
+     background-size: cover;
+     opacity: 80%;
+     font-size: 4rem;
+     height: 25vh;
+    
+ }
+ 
+button#western {
+     background-image: linear-gradient(rgba(24, 2, 4, 0.39),rgba(24, 2, 4, 0.39)),url(../images/western.jpg);
+     background-size: cover;
+     opacity: 80%;
+     font-size: 4rem;
+     height: 25vh;
+ }
+ 
+button#chinese {
+     background-image: linear-gradient(rgba(24, 2, 4, 0.39),rgba(24, 2, 4, 0.39)), url(../images/chinese.jpg);
+     background-size: cover;
+     opacity: 80%;
+     font-size: 4rem;
+     height: 25vh;
+ }
+ 
+ .judul-luar{
+    color: white;
+    background-color: transparent;
+    text-align: center;
+    transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 4.5em;
+    letter-spacing: 0.09em;
+    line-height: 1em;
+    position: absolute;
+    z-index: 5;
+    font-size: 50px;
+    text-decoration: none;
+ }
+
+td {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.accordion-body{
+    background-color: rgb(231, 222, 205);
+}
+ 
+.judul-menu {
+    /* font-family: Georgia, 'Times New Roman', Times; */
+    font-size: 2rem;
+    font-weight:bold;
+    text-decoration: none;
+}
+ 
+.list {
+    /* font-size: large; */
+    line-height: 35px;
+}
+
+.harga {
+    /* font-size: large; */
+    line-height: 35px;
+}
+
+.kuantiti {
+    width: 50px;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    margin: 6px;
+    height: 24px;
+    padding: 5px;
+    line-height: 35px;
+}
+
+/***************** reservation form end ***************/
+
+/*************** footer bar css start ****************/
+
+#footerbar h3{
+    font-weight: bold;
+} 
+
+#footerbar h6{
+    font-weight: bold;
+} 
+
+#footerbar ul{
+    padding-left: 5px;
+}
+
+#footerbar li{
+    font-size: small;
+}
+
+#footerbar i{
+    color: #6c757d;
+}
+
+/*************** footer bar css end ****************/

@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.gambar{
+    width: 65px;
+}
+
+.gambar-tengah{
+    width: 40vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+p{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #1d1b1b ;
+}
+
+.extra-div h2, .servicediv h2{
+    font-size: 0.9rem;
+    margin: 20px 0 15px 0;
+    font-weight: bold;
+    line-height: 1.1;
+    word-spacing: 4px;
+}
+
+i{
+    color: #2fccd0;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 170, 255, 0.158),rgba(0, 170, 255, 0.158)),url('../images/menu-1.jpg');
+    background-repeat: no-repeat ;
+    background-size: 100% 100%;
+    clip-path: polygon(100% 0% , 100% 77%, 50% 100%, 0 75%,0 0);
+    position: relative;
+}
+
+.header:before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    opacity: .3;
+    z-index: -1;
+    background-color: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%) ;
+}
+
+.navbar:before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    opacity: .3;
+    z-index: -1;
+    background-color: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%) ; 
+}
+
+.nav-item a{
+    color: #fff!important;
+    font-weight: bold;
+}
+
+.header-section{
+    width: 100%;
+    height: inherit;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.center-div{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+
+.header-button a{
+    border: 1px solid #fff;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #fff ;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.header-button a:hover{
+    color: #50d1c0;
+    background: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+
+.center-div p{
+    font-size: 1.3rem;
+    padding: 10px 0 20px 0;
+    color: white;
+}
+
+
+/*********** menu *********/
+.accordion-item{
+    background-color:ivory;
+    font-weight: normal;
+    text-align: justify;
+ }
+ 
+button#indonesia {
+     background-image: linear-gradient(rgba(24, 2, 4, 0.39),rgba(24, 2, 4, 0.39)),url(../images/indonesian.jpg);
+     opacity: 80%;
+     background-size: cover;
+     font-size: 4rem;
+     height: 25vh;
+    
+ }
+ 
+button#western {
+     background-image: linear-gradient(rgba(24, 2, 4, 0.39),rgba(24, 2, 4, 0.39)),url(../images/western.jpg);
+     opacity: 80%;
+     background-size: cover;
+     font-size: 4rem;
+     height: 25vh;
+ }
+ 
+button#chinese {
+     background-image: linear-gradient(rgba(24, 2, 4, 0.39),rgba(24, 2, 4, 0.39)), url(../images/chinese.jpg);
+     opacity: 80%;
+     background-size: cover;
+     background-color: transparent;
+     font-size: 4rem;
+     height: 25vh;
+ }
+ 
+.judul-luar{
+    color: white;
+    text-align: center;
+    transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 4.5em;
+    letter-spacing: 0.09em;
+    line-height: 1em;
+    position: absolute;
+    z-index: 5;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+.accordion-body{
+     background-color: rgb(231, 222, 205);
+}
+ 
+.judul-menu {
+    /* font-family: Georgia, 'Times New Roman', Times; */
+    font-size: 2rem;
+    font-weight:bold;
+    text-decoration: none;
+}
+ 
+.list {
+    font-size: large;
+    line-height: 35px;
+}
+
+
+
+ /**********FOOTER*********/
+
+#footerbar h3{
+    font-weight: bold;
+} 
+
+#footerbar h6{
+    font-weight: bold;
+}
+
+#footerbar ul{
+    padding-left: 5px;
+}
+
+#footerbar li{
+    font-size: small;
+}
+
+#footerbar i{
+    color: #6c757d;
+}
